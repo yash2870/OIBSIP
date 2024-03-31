@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Temperature Converter</h2>
+
+  <input type="number" id="celsius" placeholder="Celsius" oninput="convertTemperature(this.value, 'C')"><button><span>&degC</span></button>
+  <input type="number" id="fahrenheit" placeholder="Fahrenheit" oninput="convertTemperature(this.value, 'F')"><button><span>&degF</span></button>
+  <input type="number" id="kelvin" placeholder="Kelvin" oninput="convertTemperature(this.value, 'K')"><button><span> K</span></button>
+  <button onclick="clearAll()">Clear All</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
